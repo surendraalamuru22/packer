@@ -8,19 +8,19 @@ packer {
 }
 
 source "amazon-ebs" "ec2" {
-  ami_name      = "centos-golden-image"
+  ami_name      = "rhel-golden-image"
   instance_type = "t3.small"
   region        = "us-west-1"
   source_ami_filter {
     filters = {
-      name                = "Centos-8-DevOps-Practice"
+      name                = "RHEL-9-DevOps-Practice"
       root-device-type    = "ebs"
       virtualization-type = "hvm"
     }
     most_recent = true
     owners      = ["973714476881"]
   }
-  ssh_username = "centos"
+  ssh_username = "ec2-user"
   ssh_password = "DevOps321"
 }
 
