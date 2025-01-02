@@ -10,7 +10,7 @@ packer {
 source "amazon-ebs" "ec2" {
   ami_name      = "rhel-golden-image"
   instance_type = "t3.small"
-  region        = "us-west-1"
+  region        = "us-east-1"
   source_ami_filter {
     filters = {
       name                = "RHEL-9-DevOps-Practice"
