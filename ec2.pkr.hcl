@@ -31,7 +31,7 @@ build {
 
   provisioner "shell" {
     inline = [
-      "sudo dnf install ansible-core.x86_64"
+      "sudo labauto ansible"
     ]
   }
 }
