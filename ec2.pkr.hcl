@@ -8,7 +8,7 @@ packer {
 }
 
 source "amazon-ebs" "ec2" {
-  ami_name      = "rhel-golden-image"
+  ami_name      = "rhel-golden-image1"
   instance_type = "t3.small"
   region        = "us-east-1"
   source_ami_filter {
